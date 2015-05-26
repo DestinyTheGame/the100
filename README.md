@@ -14,11 +14,11 @@ npm install -g the100
 
 The `the100` CLI application accepts 2 flags:
 
-- `--url` The full group URL that needs to be checked, **required**.
+- `--group` The group id that needs to be checked, **required**.
 - `--interval` The interval of the checks, defaults to 3000. 
 
 ```js
-the100 --url https://www.the100.io/groups/209
+the100 --group 209
 ```
 
 ## License

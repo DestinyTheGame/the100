@@ -16,9 +16,10 @@ var request = require('request')
  */
 function available(group, interval) {
   var full = 'This group is full, but';
+  var url = 'https://www.the100.io/groups/' + group;
 
   request({
-    url: group,
+    url: url,
     method: 'GET'
   }, function requested(err, res, body) {
     if (err || ~(body || '').indexOf(full)) {
@@ -27,8 +28,8 @@ function available(group, interval) {
     }
 
     growl('The group has a spot available! quick! Join all the things');
-    browser(group);
+    browser(url);
   });
 }
 
-available(argv.url, +argv.interval);
+available(argv.group, +argv.interval);
