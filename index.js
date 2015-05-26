@@ -22,7 +22,7 @@ function available(group, interval) {
     url: url,
     method: 'GET'
   }, function requested(err, res, body) {
-    if (err || ~(body || '').indexOf(full)) {
+    if (err || ~(body || '').indexOf(full) || res.statusCode !== 200) {
       console.log('- '+ group + ' is still not available');
       return setTimeout(available.bind(this, group, interval), interval || 3000);
     }
