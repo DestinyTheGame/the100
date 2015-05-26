@@ -18,7 +18,7 @@ function available(group, interval) {
   var full = 'This group is full, but';
 
   request({
-    url: group,
+    url: 'https://www.the100.io/groups/' + group,
     method: 'GET'
   }, function requested(err, res, body) {
     if (err || ~(body || '').indexOf(full)) {
@@ -31,4 +31,4 @@ function available(group, interval) {
   });
 }
 
-available(argv.url, +argv.interval);
+available(argv.group, +argv.interval);
