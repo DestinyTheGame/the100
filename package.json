@@ -1,0 +1,26 @@
+{
+  "name": "the100",
+  "version": "1.0.0",
+  "description": "Get a notification when a group is available for joining.",
+  "main": "index.js",
+  "keywords": [
+    "the100",
+    "join",
+    "group"
+  ],
+  "bin": {
+    "the100": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DestinyTheGame/the100.git"
+  },
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "dependencies": {
+    "argh": "0.1.x",
+    "growl": "1.8.x",
+    "open": "0.0.x",
+    "request": "2.55.x"
+  }
+}
