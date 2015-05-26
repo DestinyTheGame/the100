@@ -12,7 +12,7 @@ var request = require('request')
  *
  * @param {String} group URL of the group to check.
  * @param {Number} interval Interval for checking.
- * @api prviate
+ * @api private
  */
 function available(group, interval) {
   var full = 'This group is full, but';
