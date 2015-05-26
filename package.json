@@ -1,6 +1,6 @@
 {
   "name": "the100",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get a notification when a group is available for joining.",
   "main": "index.js",
   "keywords": [
