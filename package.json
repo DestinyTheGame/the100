@@ -19,8 +19,8 @@
   "license": "MIT",
   "dependencies": {
     "argh": "0.1.x",
-    "growl": "1.8.x",
+    "growl": "~1.9.2",
     "open": "0.0.x",
-    "request": "2.55.x"
+    "request": "~2.79.0"
   }
 }
