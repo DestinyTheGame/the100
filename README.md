@@ -1,3 +1,12 @@
+```
+Please note that this project and the site has now been deprecated. The code is only 
+here for historical purposes and might not work on new environments.
+
+Originally this was designed with knowing there was a referral link system in place
+that allowed the groups to grow passed 100. Now groups grow up to 200/300 by default
+so this utility is no longer needed. 
+```
+
 # the100
 
 This a small CLI tool that will help you join a full group over at the
